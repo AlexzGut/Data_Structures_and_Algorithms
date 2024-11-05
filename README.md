@@ -6,23 +6,26 @@ Welcome to the **Data Structures and Algorithms** repository! This repository is
 
 The repository is organized into two main categories: **Data Structures** and **Algorithms**. Each category is further divided into subfolders that contain specific implementations.
 
-```bash
+   ```bash
     Data_Structures_and_Algorithms/ 
-    ├── DataStructures/ 
-    │ ├── Arrays/ 
-    │ ├── LinkedLists/ 
-    │ ├── Stacks/ 
-    │ ├── Queues/ 
-    │ ├── Trees/ 
-    │ ├── Graphs/ 
-    │ └── HashTables/ 
-    ├── Algorithms/ 
-    │ ├── Sorting/ 
-    │ └──Searching/ 
-    ├── tests/
-    ├── README.md 
-    └── LICENSE 
-```
+   ├── src/
+   │   ├── main/
+   │   │   └── java/
+   │   │       └── com/
+   │   │           └── alexzgut/
+   │   │               └── dsa/
+   │   │                   ├── DataStructures/
+   │   │                   └── Algorithms/
+   │   └── test/
+   │       └── java/
+   │           └── com/
+   │               └── alexzgut/
+   │                   └── dsa/
+   │                       └── tests/
+   ├── pom.xml
+   ├── README.md
+   └── LICENSE 
+   ```
 
 ### Folders and Content
 
@@ -34,23 +37,36 @@ The repository is organized into two main categories: **Data Structures** and **
 
 To use this repository:
 
-1. **Clone the Repository**:
+**Clone the Repository**:
 
-    ```bash
+```bash
     git clone https://github.com/AlexzGut/Data_Structures_and_Algorithms.git
     cd Data_Structures_and_Algorithms
-    ```
+```
 
-2. **Compile and Run Code Files**:
-   Each Java file can be compiled and run separately. For example:
+## Building and Running with Maven
 
+1. **Build the Project**:
     ```bash
-    javac DataStructures/Arrays/ArrayExample.java
-    java DataStructures.Arrays.ArrayExample
+    mvn clean compile
     ```
 
-3. **Testing**:
-   You can use JUnit to run tests in the `tests` folder. Make sure JUnit is in your classpath.
+2. **Run Tests**:
+    ```bash
+    mvn test
+    ```
+
+3. **Run Specific Class**:
+   Replace `MainClass` with the actual main class name.
+    ```bash
+    mvn exec:java -Dexec.mainClass="com.yourname.dsa.MainClass"
+    ```
+
+## Dependencies
+
+This project uses the following dependencies:
+- **JUnit 5**: For testing (included in the `pom.xml`).
+
 
 ## Progress and Goals 🚀
 
