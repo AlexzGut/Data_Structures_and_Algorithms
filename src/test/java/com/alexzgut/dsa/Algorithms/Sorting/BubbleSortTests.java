@@ -1,6 +1,5 @@
-package com.alexzgut.dsa.Sorting;
+package com.alexzgut.dsa.Algorithms.Sorting;
 
-import com.alexzgut.dsa.Algorithms.Sorting.BubbleSort;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -8,7 +7,7 @@ import java.util.Random;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class BubbleSortTest {
+public class BubbleSortTests {
 
     @Test
     void unsortedArrayTest() {
