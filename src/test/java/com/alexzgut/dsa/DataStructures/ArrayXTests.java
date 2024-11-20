@@ -8,10 +8,10 @@ import com.alexzgut.dsa.DataStructures.Array.ArrayX;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class ArrayXTests {
 
-    private static ArrayX array;
+    private static ArrayX<Integer> array;
     @BeforeAll
     static void setUp() {
-        array = new ArrayX(10);
+        array = new ArrayX<>(10);
     }
 
     @Test
@@ -50,7 +50,7 @@ public class ArrayXTests {
     @Test
     @Order(4)
     void deletionOfAnItemByValue() {
-        array.delete(3L);
+        array.delete(3);
 
         assertEquals(6, array.size());
     }
