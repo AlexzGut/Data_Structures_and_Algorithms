@@ -1,8 +1,5 @@
 package com.alexzgut.dsa.DataStructures.Array;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 /**
 * @author Alexander Gutierrez
 * This class encapsulates an array and its operations
